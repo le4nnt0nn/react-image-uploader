@@ -4,7 +4,7 @@ let express = require('express'),
     bodyParser = require('body-parser'),
     dbConfig = require('./database/db');
 
-const api = require('../backend/routes/user.routes')
+const api = require('../backend/public/user.routes')
 
 // MongoDB Configuration
 mongoose.Promise = global.Promise;
