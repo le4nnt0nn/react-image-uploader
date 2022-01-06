@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, cb) => {
         const fileName = file.originalname.toLocaleLowerCase().split(' ').join('-');
-        cb(null, uuid() + '-' + fileName)
+        cb(null, uuid.v4() + '-' + fileName)
     }
 });
 
