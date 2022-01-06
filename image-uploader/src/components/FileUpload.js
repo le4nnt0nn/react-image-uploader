@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import react from 'react';
+import { Component } from 'react/cjs/react.production.min';
 
-class FileUpload extends react.Component() {
-    constructor(props) {
-        super(props);
-        this.state = {
-          count: 0
-        };
-      }
-    
-      render() {
-        return (
-          <div>
-            <p>You clicked {this.state.count} times</p>
-            <button onClick={() => this.setState({ count: this.state.count + 1 })}>
-              Click me
-            </button>
-          </div>
-        );
-      }
+export class FileUpload extends Component {
+  render() {
+    return (
+      <div className='container'>
+        <div className='row'>
+          <form>
+              <h3>React File Upload</h3>
+              <div className='form-group'>
+                <input className='file'/>
+              </div>
+              <div className='form-group'>
+                <button className='btn btn-primary' type='submit'>Upload</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    )
+  } 
 }
-
-export default FileUpload
