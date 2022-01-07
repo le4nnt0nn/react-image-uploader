@@ -1,5 +1,6 @@
 import { Component } from 'react/cjs/react.production.min';
 import axios from 'axios';
+import './FileUpload.css'
 
 export class FileUpload extends Component {
   constructor(props) {
@@ -34,10 +35,10 @@ export class FileUpload extends Component {
         <div className="row">
           <form onSubmit={this.onSubmit}>
             <div className="form-group">
-              <input type="file" onChange={this.onFileChange} />
+              <input type="file" className='input-file btn btn-dark' onChange={this.onFileChange} />
             </div>
             <div className="form-group">
-              <button className="btn btn-primary" type="submit">Upload</button>
+              <button className="btn-submit btn btn-warning m-3" type="submit">Upload</button>
             </div>
           </form>
         </div>
