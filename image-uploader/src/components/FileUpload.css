@@ -1,0 +1,16 @@
+.input-file {
+    color: rgb(224, 194, 19);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn-submit {
+    -webkit-box-shadow: 0px 3px 8px 2px #000000; 
+    box-shadow: 0px 3px 8px 2px #000000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 23px;
+}
+
